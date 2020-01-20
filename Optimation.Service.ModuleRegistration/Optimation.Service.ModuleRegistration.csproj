@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Optimation.Service.Abstractions\Optimation.Service.Abstractions.csproj" />
+    <ProjectReference Include="..\Optimation.Service\Optimation.Service.csproj" />
+  </ItemGroup>
+
+</Project>
