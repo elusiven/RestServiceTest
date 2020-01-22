@@ -3,29 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimation.WebApi", "Optimation.WebApi\Optimation.WebApi.csproj", "{C0934C78-42A6-405A-833A-4AA25640FD9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optimation.WebApi", "Optimation.WebApi\Optimation.WebApi.csproj", "{C0934C78-42A6-405A-833A-4AA25640FD9D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{37B7043B-3130-4850-B62B-695E3B151FD1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{0693A834-7114-417A-B240-AD81EE7B0F82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimation.Service", "Optimation.Service\Optimation.Service.csproj", "{187CDAF0-AAA1-4A18-9184-5A38107A7A00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optimation.Service", "Optimation.Service\Optimation.Service.csproj", "{187CDAF0-AAA1-4A18-9184-5A38107A7A00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimation.Service.Abstractions", "Optimation.Service.Abstractions\Optimation.Service.Abstractions.csproj", "{CD9C4D2E-A93A-4DFB-B74F-DCB239DAB235}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optimation.Service.Abstractions", "Optimation.Service.Abstractions\Optimation.Service.Abstractions.csproj", "{CD9C4D2E-A93A-4DFB-B74F-DCB239DAB235}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimation.Service.Primitives", "Optimation.Service.Primitives\Optimation.Service.Primitives.csproj", "{16A6A29A-59F5-4601-958A-3CB075FCE642}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optimation.Service.Primitives", "Optimation.Service.Primitives\Optimation.Service.Primitives.csproj", "{16A6A29A-59F5-4601-958A-3CB075FCE642}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimation.Data.Abstractions", "Optimation.Data.Abstractions\Optimation.Data.Abstractions.csproj", "{E67B4053-DB86-4B66-A9C8-A1FDADCC4A44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optimation.Data.Abstractions", "Optimation.Data.Abstractions\Optimation.Data.Abstractions.csproj", "{E67B4053-DB86-4B66-A9C8-A1FDADCC4A44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimation.Data.Primitives", "Optimation.Data.Primitives\Optimation.Data.Primitives.csproj", "{DA15BF13-0B47-4B40-A578-55D08B35EE1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optimation.Data.Primitives", "Optimation.Data.Primitives\Optimation.Data.Primitives.csproj", "{DA15BF13-0B47-4B40-A578-55D08B35EE1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimation.Data", "Optimation.Data\Optimation.Data.csproj", "{4B10DAA1-3969-4548-8F12-3827577C1BC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optimation.Data", "Optimation.Data\Optimation.Data.csproj", "{4B10DAA1-3969-4548-8F12-3827577C1BC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimation.Tests", "Optimation.Tests\Optimation.Tests.csproj", "{37DA946E-BB39-49D6-84E6-D7E74EAC1679}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optimation.Tests", "Optimation.Tests\Optimation.Tests.csproj", "{37DA946E-BB39-49D6-84E6-D7E74EAC1679}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimation.Service.ModuleRegistration", "Optimation.Service.ModuleRegistration\Optimation.Service.ModuleRegistration.csproj", "{DA8BC413-185C-4D29-9325-571E0570CD4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optimation.Service.ModuleRegistration", "Optimation.Service.ModuleRegistration\Optimation.Service.ModuleRegistration.csproj", "{DA8BC413-185C-4D29-9325-571E0570CD4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimation.Data.ModuleRegistration", "Optimation.Data.ModuleRegistration\Optimation.Data.ModuleRegistration.csproj", "{0DBD50B9-0A6B-4D39-8E8D-919A72E0F466}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optimation.Data.ModuleRegistration", "Optimation.Data.ModuleRegistration\Optimation.Data.ModuleRegistration.csproj", "{0DBD50B9-0A6B-4D39-8E8D-919A72E0F466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimation.Shared", "Optimation.Shared\Optimation.Shared.csproj", "{BA6712BA-1E80-482E-B14E-53063AA2C50E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimation.Service.Common", "Optimation.Service.Common\Optimation.Service.Common.csproj", "{2A7D8E04-1AD4-4637-9D15-1A9E50038CEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +77,14 @@ Global
 		{0DBD50B9-0A6B-4D39-8E8D-919A72E0F466}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DBD50B9-0A6B-4D39-8E8D-919A72E0F466}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DBD50B9-0A6B-4D39-8E8D-919A72E0F466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA6712BA-1E80-482E-B14E-53063AA2C50E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA6712BA-1E80-482E-B14E-53063AA2C50E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA6712BA-1E80-482E-B14E-53063AA2C50E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA6712BA-1E80-482E-B14E-53063AA2C50E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A7D8E04-1AD4-4637-9D15-1A9E50038CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A7D8E04-1AD4-4637-9D15-1A9E50038CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A7D8E04-1AD4-4637-9D15-1A9E50038CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A7D8E04-1AD4-4637-9D15-1A9E50038CEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +98,7 @@ Global
 		{4B10DAA1-3969-4548-8F12-3827577C1BC4} = {37B7043B-3130-4850-B62B-695E3B151FD1}
 		{DA8BC413-185C-4D29-9325-571E0570CD4C} = {0693A834-7114-417A-B240-AD81EE7B0F82}
 		{0DBD50B9-0A6B-4D39-8E8D-919A72E0F466} = {37B7043B-3130-4850-B62B-695E3B151FD1}
+		{2A7D8E04-1AD4-4637-9D15-1A9E50038CEE} = {0693A834-7114-417A-B240-AD81EE7B0F82}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9859947A-B948-4A3A-8C85-A48F843EF006}

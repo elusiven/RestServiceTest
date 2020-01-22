@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Optimation.Service.ModuleRegistration;
+using Optimation.WebApi.Middlewares;
 using System;
 
 namespace Optimation.WebApi
@@ -23,6 +24,14 @@ namespace Optimation.WebApi
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            // Register API versioning
+            services.AddApiVersioning(o =>
+            {
+                o.ReportApiVersions = true;
+                o.AssumeDefaultVersionWhenUnspecified = true;
+                o.DefaultApiVersion = new ApiVersion(1, 0);
+            });
 
             // Register swagger generator
             services.AddSwaggerGen(c =>
@@ -61,6 +70,7 @@ namespace Optimation.WebApi
             });
 
             app.UseHttpsRedirection();
+            app.UseMiddleware(typeof(ErrorHandlingMiddleware));
             app.UseMvc();
         }
 

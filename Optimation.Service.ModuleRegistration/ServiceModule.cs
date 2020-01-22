@@ -7,7 +7,7 @@ namespace Optimation.Service.ModuleRegistration
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<EmailTagProcessingService>().As<IEmailTagProcessingService>().InstancePerLifetimeScope();
+            builder.RegisterType<EmailProcessingService>().As<IEmailProcessingService>().InstancePerLifetimeScope();
         }
     }
 }

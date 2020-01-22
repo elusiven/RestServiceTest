@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Optimation.Service.Abstractions\Optimation.Service.Abstractions.csproj" />
+    <ProjectReference Include="..\Optimation.Service.Common\Optimation.Service.Common.csproj" />
+    <ProjectReference Include="..\Optimation.Shared\Optimation.Shared.csproj" />
   </ItemGroup>
 
 </Project>
