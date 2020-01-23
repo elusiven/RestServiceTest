@@ -14,9 +14,15 @@ namespace Optimation.WebApi
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IHostingEnvironment env)
         {
-            Configuration = configuration;
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                .AddEnvironmentVariables();
+
+            this.Configuration = builder.Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -70,15 +76,15 @@ namespace Optimation.WebApi
             });
 
             app.UseHttpsRedirection();
-            app.UseMiddleware(typeof(ErrorHandlingMiddleware));
+            RegisterCustomMiddlewares(app);
             app.UseMvc();
         }
 
         /// <summary>
         /// Builds a DI container from all registered components
         /// </summary>
-        /// <param name="services"></param>
-        /// <returns></returns>
+        /// <param name="services">Service Collection</param>
+        /// <returns>Container Contract</returns>
         private IContainer BuildAutofacContainer(IServiceCollection services)
         {
             ContainerBuilder builder = new ContainerBuilder();
@@ -90,10 +96,19 @@ namespace Optimation.WebApi
         /// <summary>
         /// Register other required dependencies from other assemblies
         /// </summary>
-        /// <param name="builder"></param>
+        /// <param name="builder">Container builder</param>
         private void RegisterAdditionalDependencies(ContainerBuilder builder)
         {
             builder.RegisterAssemblyModules(typeof(ServiceModule).Assembly);
+        }
+
+        /// <summary>
+        /// Registers custom middleware
+        /// </summary>
+        /// <param name="app"></param>
+        private void RegisterCustomMiddlewares(IApplicationBuilder app)
+        {
+            app.UseMiddleware(typeof(ErrorHandlingMiddleware));
         }
     }
 }

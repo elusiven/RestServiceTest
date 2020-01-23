@@ -22,9 +22,9 @@ namespace Optimation.WebApi.Controllers
         [ProducesResponseType(400)]
         [ProducesResponseType(404)]
         [Produces("application/json")]
-        public async Task<IActionResult> Expense1_0(string text)
+        public async Task<IActionResult> Expense1_0([FromBody] string text)
         {
-            return Ok(await _emailTagProcessingService.ExtractExpense(text));
+            return Ok(await _emailTagProcessingService.ExtractExpenseAsync(text));
         }
 
         [HttpPost("Extract/Reservation"), MapToApiVersion("1.0")]
@@ -32,9 +32,9 @@ namespace Optimation.WebApi.Controllers
         [ProducesResponseType(400)]
         [ProducesResponseType(404)]
         [Produces("application/json")]
-        public async Task<IActionResult> Reservation1_0(string text)
+        public async Task<IActionResult> Reservation1_0([FromBody] string text)
         {
-            return Ok(await _emailTagProcessingService.ExtractReservation(text));
+            return Ok(await _emailTagProcessingService.ExtractReservationAsync(text));
         }
     }
 }
