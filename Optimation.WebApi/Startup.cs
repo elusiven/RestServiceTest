@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Optimation.Service.ModuleRegistration;
+using Optimation.WebApi.Formatters;
 using Optimation.WebApi.Middlewares;
 using System;
 
@@ -29,7 +30,10 @@ namespace Optimation.WebApi
 
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc(options =>
+            {
+                options.InputFormatters.Insert(0, new RawJsonBodyInputFormatter());
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             // Register API versioning
             services.AddApiVersioning(o =>
