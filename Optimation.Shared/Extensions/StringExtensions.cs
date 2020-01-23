@@ -8,6 +8,11 @@ namespace Optimation.Shared.Extensions
 {
     public static class StringExtensions
     {
+        /// <summary>
+        /// Checks whether string is a valid email
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
         public static bool IsValidEmail(this string email)
         {
             try

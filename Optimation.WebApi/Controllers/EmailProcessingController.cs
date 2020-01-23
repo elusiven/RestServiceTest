@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Optimation.Service.Abstractions;
 using Optimation.Service.Primitives.Models;
+using System;
 using System.Threading.Tasks;
 
 namespace Optimation.WebApi.Controllers
