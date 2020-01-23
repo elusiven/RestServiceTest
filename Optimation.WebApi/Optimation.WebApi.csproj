@@ -5,16 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Formatters\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="5.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="2.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.9.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Optimation.Service.Abstractions\Optimation.Service.Abstractions.csproj" />
     <ProjectReference Include="..\Optimation.Service.ModuleRegistration\Optimation.Service.ModuleRegistration.csproj" />
   </ItemGroup>
 
